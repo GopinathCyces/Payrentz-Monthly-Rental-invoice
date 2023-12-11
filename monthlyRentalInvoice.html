@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Monthly Rental Invoice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+      }
+
+      .invoiceDetails {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 17px 0px 19px;
+      }
+
+      .charges {
+        color: #2b5cab;
+        font-family: Raleway;
+        font-weight: 600;
+        letter-spacing: -0.08px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #dddddd;
+      }
+      th {
+        background: var(
+          --Light-Blue,
+          linear-gradient(0deg, #f3f7ff 0%, #f3f7ff 100%),
+          #f3f7ff
+        );
+        padding: 10px;
+      }
+      td {
+        padding: 10px;
+        text-align: center;
+      }
+      .footer-links {
+        font-family: "Inter", sans-serif !important;
+        font-weight: 400;
+      }
+    </style>
+  </head>
+
+  <body style="padding: 10px 15px">
+    <div
+      style="
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+      "
+    >
+      <div class="invoiceDetailLeft">
+        <h1
+          style="
+            color: #2b5cab;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+          "
+        >
+          Monthly Rental Invoice
+        </h1>
+        <h1 style="font-weight: 700">Mr. Customer Name</h1>
+        <p>10/11, Address Line1,</p>
+        <p>Address Line 2,</p>
+        <p>City - 000 000</p>
+        <p><b style="margin-right: 10px">Mobile Number</b> 9999999999</p>
+        <p>
+          <b>Email ID</b>
+          <a
+            href="mailto:customer-email@gmail.com"
+            style="margin-left: 56px; color: #2b5cab"
+            >customer-email@gmail.com</a
+          >
+        </p>
+        <p style="display: flex; align-items: center">
+          Payrentz Customer ID:
+          <span style="font-size: 18px; font-weight: 600; margin-left: 15px">
+            PR 01231
+          </span>
+        </p>
+      </div>
+
+      <div class="invoiceDetailRight">
+        <img
+          style="height: 85px"
+          src="./payrentz-logo.svg"
+          alt="payrentz-logo"
+        />
+
+        <p class="invoiceDetails">Invoice ID: <span> INV001 </span></p>
+        <p class="invoiceDetails">Invoice Date: <span> 30 June 2023 </span></p>
+        <p class="invoiceDetails">Invoice Period: <span> June </span></p>
+        <p class="invoiceDetails">Due Date: <span> 06 July 2023 </span></p>
+        <p class="invoiceDetails">
+          Status : <span style="color: red"> Unpaid </span>
+        </p>
+        <p class="invoiceDetails">
+          Payment Mode : <span style="color: red"> --- </span>
+        </p>
+        <p class="invoiceDetails">
+          Invoice Amount
+          <span style="font-size: 18px; font-weight: 600"> ₹ 4526.06 </span>
+        </p>
+      </div>
+    </div>
+    <div
+      style="
+        border-radius: 5px;
+        background: var(
+          --Light-Blue,
+          linear-gradient(0deg, #f3f7ff 0%, #f3f7ff 100%),
+          #f3f7ff
+        );
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        column-gap: 3rem;
+        margin-top: 20px;
+      "
+    >
+      <div>
+        <p class="charges">Pending Dues</p>
+        <p style="color: #2d2d2d; font-family: Raleway; font-weight: 500">
+          ₹ 0
+        </p>
+      </div>
+      <div>
+        <p class="charges"></p>
+        <p
+          style="
+            color: #2d2d2d;
+            font-family: Raleway;
+            font-weight: 500;
+            font-size: 25px;
+          "
+        >
+          +
+        </p>
+      </div>
+
+      <div>
+        <p class="charges">Charges for this Month</p>
+        <p style="color: #2d2d2d; font-family: Raleway; font-weight: 500">
+          ₹ 4526.00
+        </p>
+      </div>
+
+      <div>
+        <p class="charges"></p>
+        <p
+          style="
+            color: #2d2d2d;
+            font-family: Raleway;
+            font-weight: 500;
+            font-size: 25px;
+          "
+        >
+          =
+        </p>
+      </div>
+
+      <div>
+        <p class="charges">Amount Payable</p>
+        <p style="color: #2d2d2d; font-family: Raleway; font-weight: 500">
+          ₹ 4526.00
+        </p>
+      </div>
+      <div>
+        <p class="charges">Amount After Due Date (06Jul)</p>
+        <p style="color: #2d2d2d; font-family: Raleway; font-weight: 500">
+          ₹ 4644.00
+        </p>
+      </div>
+      <div>
+        <p class="charges"></p>
+        <p style="color: #2d2d2d; font-family: Raleway; font-weight: 500"></p>
+      </div>
+    </div>
+
+    <div class="currentmonthsummary" style="margin-top: 20px">
+      <h2 style="color: #2b5cab; font-weight: 700; letter-spacing: 0.05px">
+        Current Month Summary
+      </h2>
+
+      <table>
+        <tr>
+          <th>S.No</th>
+          <th>Product - Variant</th>
+          <th>HSN Code</th>
+          <th>No. of Unit</th>
+          <th>Rate/Unit</th>
+          <th>CGST</th>
+          <th>SGST</th>
+          <th>TOTAL</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Washing Machine 6 Kgs</td>
+          <td>997323</td>
+          <td>1</td>
+          <td>700.00</td>
+          <td>63.00</td>
+          <td>63.00</td>
+          <td>826.00</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Refrigerator 190 L</td>
+          <td>997323</td>
+          <td>1</td>
+          <td>600.00</td>
+          <td>54.00</td>
+          <td>54.00</td>
+          <td>708.00</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Washing Machine 6 Kgs</td>
+          <td>997323</td>
+          <td>1</td>
+          <td>700.00</td>
+          <td>63.00</td>
+          <td>63.00</td>
+          <td>826</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Wooden Cot Queen Size</td>
+          <td>997323</td>
+          <td>1</td>
+          <td>700.00</td>
+          <td>63.00</td>
+          <td>63.00</td>
+          <td>826.00</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td style="font-weight: 600">Late Fee</td>
+          <td>100.00</td>
+          <td>9.00</td>
+          <td>9.00</td>
+          <td>118.00</td>
+        </tr>
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th>Total</th>
+          <th></th>
+          <th>404.00</th>
+          <th>404.00</th>
+          <th>4,526.00</th>
+        </tr>
+      </table>
+
+      <p style="margin-top: 40px">
+        <span style="color: #2b5cab">Total in Words</span> Rupees Four Thousand
+        Five Hundred and Twenty Six Only
+      </p>
+      <p style="margin-top: 35px; color: #f27721; text-align: center">
+        Here How you can pay us Click the link below to pay
+      </p>
+    </div>
+
+    <div class="payment" style="display: flex; justify-content: space-between">
+      <div>
+        <div>
+          <p>
+            Click & Pay <a href="" style="color: #2b5cab">Payment Gateway</a>
+          </p>
+        </div>
+        <div>
+          <p>UPI ID <a href="" style="color: #2b5cab">payrentz@paytm</a></p>
+        </div>
+      </div>
+      <div style="display: flex; align-items: center; gap: 1rem">
+        <p>Scan & Pay</p>
+        <img style="height: 60px" src="./britanica.webp" alt="" />
+      </div>
+    </div>
+    <div>
+      <p style="text-align: center; font-size: 14px">
+        No: 14/20, Ground Floor, Mahalakshmi Street, Gandhi Road, Velachery,
+        Chennai- 600042
+      </p>
+      <div
+        style="display: flex; flex-wrap: wrap; justify-content: space-around"
+      >
+        <p class="footer-links">Mobile: +91 89395 81818</p>
+        <p class="footer-links">Email: rent@payrentz.com</p>
+        <p class="footer-links">www.payrentz.com</p>
+        <p class="footer-links">CIN No: 000000000000</p>
+        <p class="footer-links">GSTIN: 33XXXXXXXXXX</p>
+      </div>
+    </div>
+
+    <!-- <div>
+     
+      
+    </div> -->
+  </body>
+</html>
